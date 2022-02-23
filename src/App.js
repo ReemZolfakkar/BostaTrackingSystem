@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Routes,Route,BrowserRouter} from 'react-router-dom';
+import Tracking from './Components/Tracking'
+import NavBar from './Components/NavBar/NavBar'
+import Complains from './Components/TrackingShipment/Complains'
 function App() {
   return (
+   <BrowserRouter>
+    <NavBar></NavBar>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Complains></Complains>}></Route>
+        <Route path='/tracking-shipment/track_num=:track_num' element={<Tracking></Tracking>}/>
+      </Routes>
     </div>
+   </BrowserRouter>
   );
 }
 
