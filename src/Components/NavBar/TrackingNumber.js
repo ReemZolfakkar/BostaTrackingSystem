@@ -26,11 +26,6 @@ function TrackingNumber() {
             <input type="number" onKeyDown={handleKeyDown} onChange={(e)=>setOrderNumber(e.target.value)}></input>
             <FaSearch />
         </div>
-        { submit==true &&
-            <Link to={`/tracking-shipment/track_num/${ordernumber}`}>
-                <Tracking></Tracking>
-            </Link>
-        }
     </div>
   )
 }

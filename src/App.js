@@ -1,5 +1,8 @@
 import './App.css';
+import './Assetes/order-details.css';
+import './Assetes/tracking.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import './Assetes/progressbar.css'
 import { Routes,Route,BrowserRouter} from 'react-router-dom';
 import Tracking from './Components/Tracking'
 import NavBar from './Components/NavBar/NavBar'

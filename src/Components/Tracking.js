@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import axios from 'axios'
 import { selectedorder } from '../redux/actions/orderActions'
+import OrderDetails from './TrackingShipment/OrderDetails'
 function Tracking() {
   const order=useSelector((state)=>state.order)
   const {track_num}=useParams()
@@ -13,14 +14,18 @@ function Tracking() {
       console.log(err)
       });
      dispatch(selectedorder(response.data));
-     console.log(response.data)
+     
   }
   useEffect(()=>{
     if(track_num && track_num!=="")
     fetchOrder();
   },[track_num])
-  return (
-    <div>{track_num}</div>
+console.log(order)
+  return (<>
+    <div className='row tracking'>
+      <OrderDetails order={order}/>
+    </div>
+    </>
   )
 }
 

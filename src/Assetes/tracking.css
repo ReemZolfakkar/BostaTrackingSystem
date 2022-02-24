@@ -1,0 +1,8 @@
+.tracking{
+    padding: 50px;
+    display: flex;
+    max-width: 100%;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+}
