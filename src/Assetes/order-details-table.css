@@ -1,0 +1,25 @@
+.order-details-table{
+    border-collapse:separate;
+    border:solid #eee 1px;
+    border-radius:6px;
+    font-size: 16px;
+    
+}
+
+.order-details-table-td, .order-details-table-th {
+    
+    border-bottom:solid #eee 1px;
+    padding: 0 15px;
+ 
+}
+
+.order-details-table-th{
+    background-color: #eee;
+    border-top: none;
+    color: rgb(206, 202, 202);
+}
+.order-details-table-td:first-child, .order-details-table-th:first-child {
+    
+    
+ 
+}

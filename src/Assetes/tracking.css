@@ -1,8 +1,12 @@
 .tracking{
     padding: 50px;
-    display: flex;
     max-width: 100%;
     overflow-x: hidden;
     align-items: center;
     justify-content: center;
+    border-spacing: 5;
+}
+.tracking-item{
+    display: flex;
+    direction: rtl;
 }

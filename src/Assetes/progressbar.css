@@ -1,35 +1,21 @@
 #progress {
   position: relative;
   margin-bottom: 30px;
+  direction: rtl;
 }
-#progress-bar {
-  position: absolute;
-  background: lightseagreen;
-  height: 5px;
-  width: 0%;
-  top: 50%;
-  left: 0;
-}
+
+
 #progress-num {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
+  direction: rtl;
   justify-content: space-between;
 }
 #progress-num::after {
   content: "";
-  background-color: red;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 5px;
-  width: 50%;
-  z-index: -1;
-}
-#progress-num::before {
-  content: "";
-  background-color: green;
+  background-color: lightgray;
   position: absolute;
   top: 50%;
   left: 0;
@@ -37,7 +23,170 @@
   width: 100%;
   z-index: -1;
 }
-#progress-num .step {
+#PACKAGE_RECEIVED{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+}
+#PACKAGE_RECEIVED::after {
+  content: "";
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 67%;
+  z-index: -1;
+}
+#PACKAGE_RECEIVED::before {
+  content: "";
+  background-color: #f9c32d;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+#OUT_FOR_DELIVERY{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+}
+#OUT_FOR_DELIVERY::after {
+  content: "";
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 33%;
+  z-index: -1;
+}
+#OUT_FOR_DELIVERY::before {
+  content: "";
+  background-color: #f9c32d;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+#DELIVERED{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+}
+#DELIVERED::after {
+  content: "";
+  background-color: #75ce69;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+.step.success{
+  color: white;
+  border-color: #75ce69;
+  background-color: #75ce69;
+}
+.step.success .progress-icon{
+  margin-top: -10px;
+  color: white;
+}
+
+#DELIVERED_TO_SENDER{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  direction: rtl;
+  justify-content: space-between;
+}
+#DELIVERED_TO_SENDER::after {
+  content: "";
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 33%;
+  z-index: -1;
+}
+#DELIVERED_TO_SENDER::before {
+  content: "";
+  background-color: #ff0000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+.step.wrong{
+  color: white;
+  border-color: #ff0000;
+  background-color: #ff0000;
+}
+.step2.wrong{
+  color: white;
+  border-color: #ff0000;
+  background-color: #ff0000;
+}
+.step.wrong .progress-icon{
+  margin-top: -10px;
+  color: white;
+}
+.step2.wrong .progress-icon2{
+  margin-top: -5px;
+  color: white;
+}
+
+.step.active {
+  border-color: #f9c32d;
+  background-color: #f9c32d;
+  color: #fff;
+}
+
+#progress-bar-header {
+  margin-top: -20px;
+  padding: 0;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.step {
+  border: 1px solid lightgray;
+  border-radius: 100%;
+  width: 18px;
+  height: 18px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;    
+  position: relative;
+  z-index: 1;
+  margin-top: 5px;
+}
+.step2 {
   border: 1px solid lightgray;
   border-radius: 100%;
   width: 25px;
@@ -46,12 +195,35 @@
   text-align: center;
   background-color: #fff;
   font-family: sans-serif;
-  font-size: 14px;    
+  font-size: 20px;    
   position: relative;
   z-index: 1;
+  
 }
-#progress-num .step.active {
-  border-color: lightseagreen;
-  background-color: lightseagreen;
+.progress-icon{
+  margin-top: -10px;
+  color: lightgray;
+}
+.progress-icon2{
+  margin-top: -5px;
+  color: lightgray;
+}
+.step.active {
+  border-color: #f9c32d;
+  background-color: #f9c32d;
   color: #fff;
+}
+.step2.active {
+  border-color: #f9c32d;
+  background-color: #f9c32d;
+  color: #fff;
+}
+
+.step.active .progress-icon{
+  margin-top: -10px;
+  color: white;
+}
+.step2.active .progress-icon2{
+  margin-top: -5px;
+  color: white;
 }

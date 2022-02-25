@@ -3,13 +3,10 @@ const initialState={
     order:[]
 }
 export const selectedorderReducer=(state=initialState,{type,payload})=>{
-    console.log(type)
-    console.log(payload)
-
     switch(type)
       {
           case ActionTypes.SELECTED_ORDER:
-              return {payload};
+              return {...state,order:payload};
            default:
               return  state;
       }
