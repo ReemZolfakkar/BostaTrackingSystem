@@ -1,6 +1,5 @@
 export default function ProgressBarStatus(currentstatus)
 { 
-    console.log(currentstatus)
   let style={class:'progress-num',step:['step active','step','step','step']}
    if (currentstatus=='PACKAGE_RECEIVED' || currentstatus=="NOT_YET_SHIPPED" || currentstatus=="IN_TRANSIT" )
    {

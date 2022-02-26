@@ -1,0 +1,24 @@
+.complains{
+    display: contents;
+}
+.complains-img{
+    position: relative;
+    left:-1px;
+    width:32%;
+    margin: 0 8px;
+}
+
+.complains-button{
+
+    height: auto;
+    background: #ff0000;
+    border: none;
+    width: auto;
+    padding:6px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+
+}
