@@ -12,7 +12,7 @@ function Navbar() {
       //show on scroll up
       if (prevY > currentY) {
         document.getElementById("nav-section").style.top = "0px";
-        document.getElementById("nav-section").style.backgroundColor= "white";
+     
       }
       //hide on scroll down
       else {
