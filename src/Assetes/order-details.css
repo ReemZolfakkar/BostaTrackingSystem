@@ -3,7 +3,7 @@
     direction: rtl;
   }
 #order-details-header {
-    
+    margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -55,5 +55,8 @@
     { 
         width: 100% !important;
         overflow-x: scroll; 
+    }
+    .orderdetails-box1{
+      font-size: 12px;
     }
 }

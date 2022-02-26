@@ -1,8 +1,11 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import ProgressBar from './ProgressBar'
 import getDay from '../../Utilities/getDay';
+import { LanguageContext } from '../../Translation/LanguageContext';
 function OrderDetails(props) {
     const shipment=props.order.order;
+    const langaugeType=useContext(LanguageContext)
+    const lang=langaugeType.userLang
   return (
     <div className='row orderdetails'>
         <div className='orderdetails-box1'>
@@ -15,15 +18,33 @@ function OrderDetails(props) {
                             {shipment.TrackingNumber}
                         </div>
                         <div>
-                            {shipment.CurrentStatus.state}
+                            {shipment.CurrentStatus.state==='DELIVERED'?
+                                <span style={{color:'#75ce69'}}>
+                                     {lang[`${shipment.CurrentStatus.state}`]}
+                                </span>
+                                : shipment.CurrentStatus.state=='DELIVERED_TO_SENDER' ?
+                                <span style={{color:'#ff0000'}}>
+                                    {lang[`${shipment.CurrentStatus.state}`]}
+                                </span>:
+                                <span style={{color:'#f9c32d'}}>
+                                     {lang[`${shipment.CurrentStatus.state}`]}
+                                </span>
+                            }
+                           
                         </div>
                     </li>
                     <li >
                         <div className='top'>
                             اخر تحديث 
                         </div>
-                        <div> 
-                            {getDay(shipment.CurrentStatus.timestamp)}
+                        <div style={{flexWrap:'wrap'}}> 
+                            <div>
+                            {getDay(shipment.CurrentStatus.timestamp)[0]}
+                            </div>
+                            <div>
+                            {getDay(shipment.CurrentStatus.timestamp)[1]}
+
+                            </div>
                         </div>  
                     </li>
                     <li >

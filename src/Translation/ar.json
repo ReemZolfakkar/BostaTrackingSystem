@@ -1,0 +1,11 @@
+{
+    "DELIVERED":"تم التسليم",
+    "TICKET_CREATED":"تم إنشاء الشحنة",
+    "PACKAGE_RECEIVED":"تم إستلام الشحنة من التاجر",
+    "OUT_FOR_DELIVERY":"الشحنة خرجت للتسليم",
+    "DELIVERED_TO_SENDER":"تم إلغاء الطلب",
+    "WAITING_FOR_CUSTOMER_ACTION":"في إنتظار رد العميل",
+    "RECEIVED_DELIVERY_LOCATION":"تم تأكيد العنوان",
+    "IN_TRANSIT":"في مرحلة العبور"
+    
+}

@@ -5,6 +5,7 @@ import axios from 'axios'
 import { selectedorder } from '../redux/actions/orderActions'
 import OrderDetails from './TrackingShipment/OrderDetails'
 import OrderDetailsTable from './TrackingShipment/OrderDetailsTable'
+import OrderAddress from './TrackingShipment/OrderAddress'
 function Tracking() {
   const order=useSelector((state)=>state.order)
   const {track_num}=useParams()
@@ -29,11 +30,11 @@ console.log(order)
           <OrderDetails order={order} />
         </div>
         <div className='row tracking-item' >
-          <div className='col order-details-table-div'>
+          <div className='col-8 order-details-table-div'>
               <OrderDetailsTable order={order}/>
           </div>
-          <div className='col'>
-             
+          <div className='col-4'>
+             <OrderAddress/>
           </div>
         </div>
         </>

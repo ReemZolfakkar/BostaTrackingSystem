@@ -15,7 +15,7 @@ function TrackingNumber() {
       };
     
   return (
-    <div>
+    <div style={{backgroundColor:'white'}}>
         <div>
             Track your Shipment
         </div>

@@ -180,7 +180,7 @@
   line-height: 25px;
   text-align: center;
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: cairo;
   font-size: 14px;    
   position: relative;
   z-index: 1;
@@ -194,7 +194,7 @@
   line-height: 25px;
   text-align: center;
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: cairo;
   font-size: 20px;    
   position: relative;
   z-index: 1;
@@ -226,4 +226,9 @@
 .step2.active .progress-icon2{
   margin-top: -5px;
   color: white;
+}
+@media screen and (max-width: 768px) {
+  #progress-bar-header{
+    font-size: 10px;
+  }
 }

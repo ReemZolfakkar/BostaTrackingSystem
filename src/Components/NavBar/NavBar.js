@@ -12,10 +12,13 @@ function Navbar() {
       //show on scroll up
       if (prevY > currentY) {
         document.getElementById("nav-section").style.top = "0px";
+        document.getElementById("nav-section").style.backgroundColor= "white";
       }
       //hide on scroll down
       else {
         document.getElementById("nav-section").style.top = "-1000px";
+       
+
       }
       prevY = currentY;
     };
@@ -42,21 +45,15 @@ function Navbar() {
                 <li
                   className="nav-item"
                   onMouseEnter={() => setIsShown(true)}
-                
                 >
-                  <Link
-                    className={"nav-link"}
-                    to="/"
-                   
-                  >
                     Tracking Shipment
-                  </Link>
-                </li>
-                {isShown && (
-                <div>
-                    <TrackingNumber/>
-                </div>
+                    {isShown && (
+                      <div className="d-block">
+                          <TrackingNumber/>
+                      </div>
                 )}
+                </li>
+              
           </ul>
           
         </div>

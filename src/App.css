@@ -1,9 +1,14 @@
+@font-face {
+  font-family:cairo;
+  src: url(./Assetes/Fonts/Cairo/static/Cairo-Regular.ttf) format("truetype");
+}
 .App{
   display: flex;
   max-width: 100%;
   overflow-x: hidden;
   align-items: center;
   justify-content: center;
+  font-family: cairo;
 }
 #nav-section{
   position: sticky;
@@ -16,6 +21,7 @@
 }
 .navbar-nav {
   margin: auto;
+
 }
 .navbar-nav--head {
   list-style-type: none;
