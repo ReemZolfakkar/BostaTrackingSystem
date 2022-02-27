@@ -12,6 +12,11 @@
     padding: 0 15px;
  
 }
+@media screen and (max-width:500px) {
+    .order-details-table-td{
+    white-space: nowrap;
+    }
+}
 
 .order-details-table-th{
     background-color: #eee;
