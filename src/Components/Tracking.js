@@ -48,7 +48,7 @@ function Tracking() {
         </div>
         </>
         }
-        {(order.order.length==0  || error==true )&&
+        {(error==true )&&
         <>
         <div>
             لا يوجد شحنة بهذا الرقم {track_num}
