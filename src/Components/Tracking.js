@@ -37,7 +37,7 @@ function Tracking() {
           <div className='col-8 order-details-table-div'>
               <OrderDetailsTable order={order}/>
           </div>
-          <div className='col-4'>
+          <div className='col-4 order-complains-div'>
              <div>
                <OrderAddress/>
              </div>

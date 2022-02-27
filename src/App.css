@@ -111,7 +111,7 @@ a.nav-link--top {
   font-size: 16px;
   padding-inline-end: 3px;
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 900px) {
   .nav-item {
     padding: 0 10px;
   }
@@ -157,4 +157,9 @@ a.nav-link--top {
     font-size: 14px;
     margin-left: 10px;
 
+}
+@media  screen and (max-width:700px) {
+  .order-complains-div{
+          width: auto !important;
+  }
 }
