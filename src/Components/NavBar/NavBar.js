@@ -30,10 +30,10 @@ function Navbar() {
   return (
     <div id="nav-section">
       <nav className="navbar navbar-expand-sm">
-        <div className="collapse navbar-collapse" id="navbar">
+        <div className=" navbar-collapse" id="navbar">
           <ul className="navbar-nav">
                 <li>
-                <img src="https://bosta.co/wp-content/uploads/2019/08/bosta_logo_en_red.svg" alt="bosta.co" id="logo" data-height-percentage="54" data-actual-width="153" data-actual-height="50" style={{width:'100%'}}/>
+                <img src="https://bosta.co/wp-content/uploads/2019/08/bosta_logo_en_red.svg" alt="bosta.co" id="logo" data-height-percentage="54" data-actual-width="153" data-actual-height="50" />
                 </li>
                 <li
                   className="nav-item"
