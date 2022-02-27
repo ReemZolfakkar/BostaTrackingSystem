@@ -1,3 +1,17 @@
+#Bosta Tracking System Service
+
+It is a tracking system service for shipments that helps customers to track their shipments in details 
+
+#Technologies used
+
+-ReactJS
+-Redux
+
+#How to use the project
+-Select Tracking Shipment from NavBar
+-Enter the shipment number in the input
+-Press Enter or click on the search button 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
