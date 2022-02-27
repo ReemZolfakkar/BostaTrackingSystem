@@ -1,13 +1,14 @@
-#Bosta Tracking System Service
+# Bosta Tracking System Service
 
 It is a tracking system service for shipments that helps customers to track their shipments in details 
 
-#Technologies used
+# Technologies used
 
 -ReactJS
 -Redux
 
-#How to use the project
+# How to use the project
+
 -Select Tracking Shipment from NavBar
 -Enter the shipment number in the input
 -Press Enter or click on the search button 
