@@ -4,13 +4,13 @@ It is a tracking system service for shipments that helps customers to track thei
 
 # Technologies used
 
--ReactJS
+-ReactJS\
 -Redux
 
 # How to use the project
 
--Select Tracking Shipment from NavBar
--Enter the shipment number in the input
+-Select Tracking Shipment from NavBar \
+-Enter the shipment number in the input \
 -Press Enter or click on the search button 
 
 # Getting Started with Create React App
